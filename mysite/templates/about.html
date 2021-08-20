@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% load static %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src = "{% static 'css/animation.js' %}"></script>
+    <meta charset='UTF-8'/>
+    <title>About</title>
+    <link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="gfi.png">
+    <link rel='stylesheet' href="{% static 'css/styles.css' %}" type="text/css"/>
+  </head>
+  <body style = "font-family: 'Noto Sans JP', sans-serif;">
+      <div class='menu-container'>
+        <div class='menu'>
+          <div class='links'>
+            <a class='home' href="index.html">Home</a>  
+            <a class='signup' href="signup.html">Sign Up</a>      <!-- This is nested now -->
+            <a class='login' href="login.html">Login</a>         <!-- This one too! -->
+            <a class='about' href="about.html">About</a>   
+          </div>
+        </div>
+      </div>
+
+      <div class='about-container'>
+        <div class='about-text'>
+          <div> This project is a joint effort between Good Food Institute and Berkeley graduate and undergraduate students
+            to make alternative protein products and recipes more accessible. 
+            As of August of 2021, this website is still in its early stages of development! </div>
+      </div>
+  </body>
+</html>
