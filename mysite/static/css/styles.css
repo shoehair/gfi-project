@@ -19,7 +19,7 @@ html {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 100
+  font-weight: 100;
 }
 
 a{
@@ -68,17 +68,20 @@ a:hover{
   background-color: var(--light-green);
   display: flex;
   justify-content: center;
+  margin-top: 50px;
 }
 
 .about-text {
   font-family: 'Open Sans', sans-serif;
   font-size: 30px;
   width: 900px;
-  height: 300px;
   display: flex;
-  align-items:  center;
   justify-content: center;
   flex-direction:  column;
+}
+
+.about-text a{
+  color: var(--darker-green)
 }
 
 .header-container {
@@ -110,7 +113,12 @@ a:hover{
   margin-top: 8px;
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
-  align-items:  center;
+  align-items: center;
+  text-indent: 20px;
+}
+
+input[type="text"]::placeholder {
+  text-align: center;
 }
 
 .sidenav {
